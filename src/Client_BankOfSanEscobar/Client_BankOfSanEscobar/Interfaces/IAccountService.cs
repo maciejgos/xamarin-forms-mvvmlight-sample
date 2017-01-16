@@ -5,7 +5,7 @@ using Client_BankOfSanEscobar.Models;
 
 namespace Client_BankOfSanEscobar.Interfaces
 {
-    public class IAccountService
+    public interface IAccountService
     {
         public Task<IEnumerable<Account>> GetAll()
         {
