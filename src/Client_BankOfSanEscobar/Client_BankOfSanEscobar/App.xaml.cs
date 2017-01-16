@@ -1,19 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace Client_BankOfSanEscobar
 {
     public partial class App : Application
     {
+        private static readonly Locator locator = new Locator();
+
+        public static Locator Locator
+        {
+            get
+            {
+                return locator;
+            }
+        }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new Client_BankOfSanEscobar.Views.MainPage();
+            MainPage = new Views.MainPage();
         }
 
         protected override void OnStart()
