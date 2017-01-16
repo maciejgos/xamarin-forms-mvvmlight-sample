@@ -13,7 +13,7 @@ namespace Client_BankOfSanEscobar
         {
             InitializeComponent();
 
-            MainPage = new Client_BankOfSanEscobar.MainPage();
+            MainPage = new Client_BankOfSanEscobar.Views.MainPage();
         }
 
         protected override void OnStart()
