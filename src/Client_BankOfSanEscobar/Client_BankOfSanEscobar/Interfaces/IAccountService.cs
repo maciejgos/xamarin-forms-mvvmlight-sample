@@ -7,9 +7,6 @@ namespace Client_BankOfSanEscobar.Interfaces
 {
     public interface IAccountService
     {
-        public Task<IEnumerable<Account>> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+        Task<IEnumerable<Account>> GetAll();
     }
 }
