@@ -15,5 +15,10 @@ namespace Client_BankOfSanEscobar.Views
             InitializeComponent();
             BindingContext = App.Locator.Main;
         }
+
+        private void AccountsListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            //TODO: Add navigation to details page
+        }
     }
 }
