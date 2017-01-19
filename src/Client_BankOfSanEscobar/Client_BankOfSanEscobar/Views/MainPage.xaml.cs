@@ -13,6 +13,7 @@ namespace Client_BankOfSanEscobar.Views
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = App.Locator.Main;
         }
     }
 }
