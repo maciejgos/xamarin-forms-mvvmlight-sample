@@ -7,10 +7,14 @@
       <Label Text="Available balance" />
       <Label Text="{Binding AvailableBalance}" />
     </StackLayout>
-    <ListView x:Name="AccountsListView" ItemsSource="{Binding Accounts}" OnItemSelected="AccountsListView_OnItemSelected">
+    <ListView x:Name="AccountsListView" ItemsSource="{Binding Accounts}" SelectedItem="{Binding SelectedItem}">
     <ListView.ItemTemplate>
       <DataTemplate>
-        <TextCell Text="{Binding Name}" />
+        <ViewCell>
+          <ViewCell.View>
+            <Button Text="{Binding Name}" Command="{Binding ShowDetailsCommand}" CommandParameter="{Binding SelectedItem}"/>
+          </ViewCell.View>
+        </ViewCell>
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>

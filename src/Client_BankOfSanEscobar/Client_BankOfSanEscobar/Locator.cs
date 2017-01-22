@@ -1,7 +1,9 @@
 ﻿using Client_BankOfSanEscobar.Interfaces;
 using Client_BankOfSanEscobar.Mock;
+using Client_BankOfSanEscobar.Services;
 using Client_BankOfSanEscobar.ViewModels;
 using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 using Microsoft.Practices.ServiceLocation;
 
 namespace Client_BankOfSanEscobar
@@ -17,6 +19,7 @@ namespace Client_BankOfSanEscobar
 
             //Services
             SimpleIoc.Default.Register<IAccountService, AccountServiceMock>();
+            SimpleIoc.Default.Register<INavigationService, NavigationService>();
         }
 
         public MainViewModel Main

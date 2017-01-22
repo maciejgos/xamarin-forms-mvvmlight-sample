@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Client_BankOfSanEscobar.Services;
+using Xamarin.Forms;
 
 namespace Client_BankOfSanEscobar
 {
@@ -18,7 +19,14 @@ namespace Client_BankOfSanEscobar
         {
             InitializeComponent();
 
-            MainPage = new Views.MainPage();
+            NavigationService navigation = new NavigationService();
+            navigation.Configure("MainPage", typeof(Views.MainPage));
+            navigation.Configure("DetailsPage", typeof(Views.DetailsPage));
+
+            NavigationPage mainPage = new NavigationPage(new Views.MainPage());
+            MainPage = mainPage;
+
+            navigation.Initialize(mainPage);
         }
 
         protected override void OnStart()
