@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Client_BankOfSanEscobar.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace Client_BankOfSanEscobar.Views
         private void AccountsListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             //TODO: Add navigation to details page
+            Navigation.PushAsync(new DetailsPage((Account)e.SelectedItem));
         }
     }
 }
