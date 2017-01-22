@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Client_BankOfSanEscobar.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Client_BankOfSanEscobar.Models;
 
 namespace Client_BankOfSanEscobar.Interfaces
 {
