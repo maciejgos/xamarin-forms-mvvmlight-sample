@@ -4,4 +4,3 @@ This is a demo application for demonstration how to deal with Xamarin Forms and 
 ## Used technologies
 * Xamarin Forms
 * MVVMLight
-* SQLite
